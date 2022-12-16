@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai_2</title>
+</head>
+
+<body>
+    <script>
+
+        function content(str) {
+            var convert = str.toLowerCase().split(' ');
+            var result = convert.map(
+                function (val) {
+                    return val.replace(val.charAt(0), val.charAt(0).toUpperCase());
+                }
+            );
+            return result.join(' ');
+        }
+        var result = content("hello rikkei academy");
+        console.log(result);
+    </script>
+</body>
+
+</html>
