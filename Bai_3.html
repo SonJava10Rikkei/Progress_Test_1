@@ -10,13 +10,30 @@
 
 <body>
     <script>
+        // cách 1:
+
         let Arr = [1, 2, 3, 3, 4, 5, 4, 4, 4, 5, 5];
-
-
         let newArr = Arr.filter((a, i) => {
             return Arr.indexOf(a) === i;
         });
         console.log("Arr ", newArr);
+
+// cách 2
+        // let count = parseInt(prompt("Có bao nhiêu số cần lọc trong mảng??:"));
+        // let arr = [];
+        // for (let i = 0; i < count; i++) {
+        //     let member = prompt("Xin mời nhập số thứ " + (i + 1) + ":");
+        //     arr.push(member);
+        // }
+        // for (let i = 0; i < arr.length; i++) {
+        //     for (let j = arr.length; i < j; j--) {
+        //         if (arr[i] === arr[j]) {
+        //             arr.splice(j, 1);
+        //         }
+        //     }
+        // }
+        // console.log(arr);
+
     </script>
 </body>
 
